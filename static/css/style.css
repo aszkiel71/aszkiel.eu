@@ -1,0 +1,108 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #222;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    padding: 20px;
+    text-align: center;
+}
+
+nav {
+    background-color: #444;
+    padding: 10px;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+h1, h2 {
+    color: #f6b93b;
+}
+
+footer {
+    background-color: #333;
+    text-align: center;
+    padding: 20px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+footer p {
+    margin: 0;
+}
+
+.github-icon {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-left: 10px;
+}
+
+.download-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #f6b93b;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.algorithms {
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);  /* 3 kolumny */
+    grid-gap: 20px;  /* Odstępy między algorytmami */
+    max-width: 1200px;  /* Maksymalna szerokość kontenera */
+    margin: 0 auto;  /* Wycentrowanie kontenera */
+}
+
+.algorithm-box {
+    background-color: #444;
+    border: 2px solid #f6b93b;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.algorithm-box h2 {
+    color: #f6b93b;
+}
+
+.algorithm-box p {
+    color: #bbb;
+}
+
+.algorithm-box a {
+    background-color: #f6b93b;
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 15px;
+}
+
+.algorithm-box a:hover {
+    background-color: #e67e22;
+}
