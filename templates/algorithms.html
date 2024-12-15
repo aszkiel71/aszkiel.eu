@@ -8,29 +8,29 @@
 </head>
 <body>
     <header>
-        <h1>Algorytmy Wojciecha Aszkiełowicza</h1>
+        <h1>My algorithms, projects</h1>
     </header>
 
     <nav>
         <ul>
-            <li><a href="/">Strona główna</a></li>
+            <li><a href="/">Main</a></li>
             <li><a href="https://github.com/aszkiel71" target="_blank"><img src="{{ url_for('static', filename='images/github-icon.png') }}" alt="GitHub" class="github-icon"></a></li>
-            <li><a href="/algorithms">Moje algorytmy</a></li>
+            <li><a href="/algorithms">Algo</a></li>
         </ul>
     </nav>
 
     <section class="algorithms">
-        <!-- Algorytmy -->
+        <!-- Algorytmy i pliki do pobrania-->
         <div class="algorithm-box">
-            <h2>Fraktal Sierpińskiego</h2>
-            <p>Fraktal Sierpińskiego jest jednym z najbardziej znanych fraktali. Możesz pobrać plik, aby zobaczyć jego wygenerowaną wersję w Pythonie.</p>
-            <a href="{{ url_for('static', filename='algo/fraktal.py') }}" class="download-btn" download>Pobierz Fraktal</a>
+            <h2>Sierpinski's Fractal</h2>
+            <p>The Sierpinski fractal is one of the most famous fractals. You can download the file to see its generated version in Python.</p>
+            <a href="{{ url_for('static', filename='algo/fraktal.py') }}" class="download-btn" download>Download .py</a>
         </div>
 
         <div class="algorithm-box">
-            <h2>Algorytm 2</h2>
-            <p>Opis algorytmu 2. Można tu opisać jego działanie, sposób implementacji lub jego zastosowanie.</p>
-            <a href="#" class="download-btn">Pobierz Algorytm 2</a>
+            <h2>Fibonacci (fast as hell)</h2>
+            <p>Fibonacci algorithm in dynamic programming. Download by button below and try it by yourself in Python.</p>
+            <a href="{{ url_for('static', filename='algo/fibonacci.py') }}" class="download-btn" download>Download .py</a>
         </div>
 
     </section>
