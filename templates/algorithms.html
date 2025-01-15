@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Moje algorytmy - Wojciech Aszkiełowicz</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <script src="{{ url_for('static', filename='js/filter.js') }}" defer></script>
 </head>
 <body>
     <header>
@@ -14,23 +15,38 @@
     <nav>
         <ul>
             <li><a href="/">Main</a></li>
-            <li><a href="https://github.com/aszkiel71" target="_blank"><img src="{{ url_for('static', filename='images/github-icon.png') }}" alt="GitHub" class="github-icon"></a></li>
-            <li><a href="/algorithms">Algo</a></li>
+            <li><a href="https://github.com/aszkiel71" target="_blank">
+                <img src="{{ url_for('static', filename='images/github-icon.png') }}" alt="GitHub" class="github-icon">
+            </a></li>
+            <li><a href="/algorithms">Repo</a></li>
         </ul>
     </nav>
 
+    <!-- Panel filtrowania -->
+    <section id="filter-section">
+        <h3>Filter by tags:</h3>
+        <div id="tags">
+        </div>
+    </section>
+
     <section class="algorithms">
-        <!-- Algorytmy i pliki do pobrania-->
-        <div class="algorithm-box">
+        <!-- Algorytmy -->
+        <div class="algorithm-box" data-tags="Math,Python">
             <h2>Sierpinski's Fractal</h2>
-            <p>The Sierpinski fractal is one of the most famous fractals. You can download the file to see its generated version in Python.</p>
+            <p>The Sierpinski fractal is one of the most famous fractals. You can download the file to see its generated version in Python (turtle).</p>
             <a href="{{ url_for('static', filename='algo/fraktal.py') }}" class="download-btn" download>Download .py</a>
         </div>
 
-        <div class="algorithm-box">
-            <h2>Fibonacci (fast as hell)</h2>
+        <div class="algorithm-box" data-tags="Math,Algorithm,Python">
+            <h2>Fibonacci O(n) t.c.</h2>
             <p>Fibonacci algorithm in dynamic programming. Download by button below and try it by yourself in Python.</p>
             <a href="{{ url_for('static', filename='algo/fibonacci.py') }}" class="download-btn" download>Download .py</a>
+        </div>
+
+        <div class="algorithm-box" data-tags="Python,PyGame">
+            <h2>Game (TAG)</h2>
+            <p>Basic game in Python library (pygame).</p>
+            <a href="{{ url_for('static', filename='algo/game.py') }}" class="download-btn" download>Download .py</a>
         </div>
 
     </section>

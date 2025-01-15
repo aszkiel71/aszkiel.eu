@@ -70,10 +70,10 @@ footer p {
 .algorithms {
     padding: 20px;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);  /* 3 kolumny */
-    grid-gap: 20px;  /* Odstępy między algorytmami */
-    max-width: 1200px;  /* Maksymalna szerokość kontenera */
-    margin: 0 auto;  /* Wycentrowanie kontenera */
+    grid-template-columns: repeat(3, 1fr); /* 3 kolumny */
+    grid-gap: 20px; /* Odstępy między algorytmami */
+    max-width: 1200px; /* Maksymalna szerokość kontenera */
+    margin: 0 auto; /* Wycentrowanie kontenera */
 }
 
 .algorithm-box {
@@ -111,4 +111,36 @@ footer p {
 .facts-section h3,
 .facts-section p {
     margin-left: 100px;
+}
+
+/* panel filtrow */
+#filter-section {
+    background-color: #333;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+#filter-section h3 {
+    color: #f6b93b;
+    margin-bottom: 10px;
+}
+
+#tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.tag {
+    background-color: #f6b93b;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.tag.selected {
+    background-color: #e67e22;
 }
